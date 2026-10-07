@@ -1,73 +1,80 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
-  font-family: 'Norse';
-  src: url('fonts/Norse.otf') format('opentype');
+  font-family: "Norse";
+  src: url("fonts/Norse.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
 .container .left-container {
-   flex: 1;
-   background-image: url(images/background-image.jpg);
-  background-repeat: no-repeat; 
-  background-position: center; 
-  background-size: cover; 
+  flex: 1;
+  background-image: url(images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-direction: column;
-}
-
-.odin-logo {
-    display: flex;
-}
-
-.odin-logo img {
-    height: 100px;
-}
-
-.text-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left-container .black-strip {
-    background-color: black;
-    opacity: 0.7;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.left-container .odin-text{
-    font-family: 'Norse', sans-serif;
-    font-size: 5rem;
-    color: white;
-}
-
-.container .right-container {
-    flex: 2;
-}
-
-
-.credit a{
-    color: whitesmoke;
-    text-decoration: none;
+  position: relative;
 }
 
 .credit {
-    color: whitesmoke;
+  position: absolute;
+  bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.odin-logo {
+  display: flex;
+  z-index: 2;
+}
+
+.odin-logo img {
+  height: 100px;
+}
+
+.text-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container .black-strip {
+  position: absolute;
+  top: 150px;
+   background-color: rgb(0 0 0 / 70%); 
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.left-container .odin-text {
+  font-family: "Norse", sans-serif;
+  font-size: 5rem;
+  color: white;
+  font-weight: 900;
+}
+
+.container .right-container {
+  flex: 2;
+}
+
+.credit a {
+  color: rgba(245, 245, 245, 0.696);
+}
+
+.credit {
+  color: rgba(245, 245, 245, 0.696);
+  font-size: 0.7rem;
 }
