@@ -1,3 +1,45 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+  font-family: 'Norse';
+  src: url('fonts/Norse.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+    display: flex;
+}
+
+.container .left-container {
+   flex: 1;
+   background-image: url(images/background-image.jpg);
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+
+.left-container .odin-background {
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+}
+
+.left-container .odin-text{
+    font-family: 'Norse', sans-serif;
+}
+
+.container .right-container {
+    flex: 2;
 }
