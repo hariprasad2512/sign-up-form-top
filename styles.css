@@ -162,6 +162,16 @@ box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
   font-size: 18px;
   font-weight: 700;
   border-radius: 10px;
-  min-height: 30px;
   text-align: center;
+  width: 250px;
+}
+
+.cta-section p {
+  margin-top: 30px;
+}
+.cta-section a {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
+
 }
