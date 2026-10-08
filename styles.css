@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 @font-face {
@@ -54,7 +54,7 @@
 .left-container .black-strip {
   position: absolute;
   top: 150px;
-   background-color: rgb(0 0 0 / 70%); 
+  background-color: rgb(0 0 0 / 70%);
   padding: 10px;
   width: 100%;
   display: flex;
@@ -81,16 +81,65 @@
   font-size: 0.7rem;
 }
 
-
-.right-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px;
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
 }
 
-.right-container .hero-section {   
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+.right-container .hero-section {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
 }
 
+.signup-form {
+  padding-top: 30px;
+}
+
+.signup-form h3 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.signup-form .form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-input {
+  max-width: 350px;
+  height: 30px;
+  outline: none;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to drop to the next line */
+  gap: 16px;
+  padding: 20px;
+}
+
+.form-field {
+  flex: 1 1 calc(50% - 8px);
+}
+
+.cta-section button {
+  padding: 20px;
+  background-color: #596d48;
+  color: whitesmoke;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+}
+
+.pwd:user-invalid {
+  border-color: red;
+}
+
+.form-input:focus {
+  border: 1px solid blue;
+box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15); 
+}

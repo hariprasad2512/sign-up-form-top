@@ -37,20 +37,57 @@
           </div>
         </div>
         <div class="signup-form">
-          <h1>SIGNUP FORM</h1>
-          <h1>SIGNUP FORM</h1>
-          <h1>SIGNUP FORM</h1>
-          <h1>SIGNUP FORM</h1>
-          <h1>SIGNUP FORM</h1>
-          <h1>SIGNUP FORM</h1>
-          <h1>SIGNUP FORM</h1>
-          <h1>SIGNUP FORM</h1>
-          <h1>SIGNUP FORM</h1>
-          <h1>SIGNUP FORM</h1>
+          <h3>Let's Do This.</h3>
+          <form action="" method="post">
+            <div class="form-field">
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" class="form-input" id="first_name" />
+            </div>
+
+            <div class="form-field">
+              <label for="last_name">LAST NAME</label>
+              <input type="text" class="form-input" id="last_name" />
+            </div>
+
+            <div class="form-field">
+              <label for="email">EMAIL</label>
+              <input type="email" class="form-input" id="email" />
+            </div>
+
+            <div class="form-field">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" class="form-input" id="phone-number" />
+            </div>
+
+            <div class="form-field">
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                class="form-input pwd"
+                id="password"
+                required
+                minlength="8"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                class="form-input pwd"
+                id="confirm-password"
+                required
+                minlength="8"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              />
+            </div>
+          </form>
         </div>
 
         <div class="cta-section">
-          <button>SIGN UP NOW</button>
+          <button>Create Account</button>
+          <p>Already have an Account ? <span>Log in</span></p>
         </div>
       </div>
     </div>
